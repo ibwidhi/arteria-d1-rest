@@ -4,12 +4,19 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "d1-example",
+	"name": "arteria-d1-rest",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-11-20",
 	"observability": {
-		"enabled": true
-	}
+		"enabled": true,
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_id": "2440690d-9741-42fb-883f-da01bb542fee",
+			"database_name": "arteria",
+		},
+	],
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
